@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Бригада — задачи, фото и замечания по ремонту в одном месте</title>
+  <meta id="meta-description" name="description" content="Пилот для бригад Беларуси: задачи, фото и замечания по ремонту в одном Android-приложении. Интерфейс пока на русском. Доступ выдаёт организатор.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#F7F4EE">
+  <meta property="og:type" content="website">
+  <meta property="og:title" id="og-title" content="Бригада — задачи, фото и замечания по ремонту в одном месте">
+  <meta property="og:description" id="og-description" content="Пилот для бригад Беларуси: задачи, фото и замечания по ремонту в одном Android-приложении. Интерфейс пока на русском.">
+  <meta property="og:locale" id="og-locale" content="ru_RU">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">К содержанию</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#main" data-i18n-aria-label="brand.aria" aria-label="Бригада — на главную">
+        <img src="assets/mark.svg" alt="" width="32" height="32">
+        <span data-i18n="brand.name">Бригада</span>
+      </a>
+
+      <nav class="main-nav" data-i18n-aria-label="nav.aria" aria-label="Основная навигация">
+        <a href="#inside" data-i18n="nav.inside">Что внутри</a>
+        <a href="#scenarios" data-i18n="nav.scenarios">Сценарии</a>
+        <a href="#fit" data-i18n="nav.fit">Кому подходит</a>
+        <a href="#faq" data-i18n="nav.faq">Вопросы</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" data-i18n-aria-label="nav.langLabel" aria-label="Язык">
+          <button type="button" data-lang="ru" lang="ru" aria-label="Русский" aria-pressed="true">RU</button>
+          <button type="button" data-lang="be" lang="be" aria-label="Беларуская" aria-pressed="false">BE</button>
+          <button type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn-primary btn-sm header-cta" href="#pilot" data-i18n="nav.cta">Оставить заявку</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Пилот для бригад · Android · Беларусь</p>
+          <h1 data-i18n="hero.title">Задачи, фото и замечания по ремонту — в одном месте.</h1>
+          <p class="lead" data-i18n="hero.lead">Что делать, что уже сделано и что заказчик попросил поправить — бригада ведёт с телефона. На объекте, в дороге, без бумажных списков.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#pilot" data-i18n="hero.ctaPrimary">Оставить заявку</a>
+            <a class="btn btn-secondary" href="#scenarios" data-i18n="hero.ctaSecondary">Посмотреть, как выглядит</a>
+          </div>
+          <p class="hero-note" data-i18n="hero.note">Идёт набор в пилот. Доступ — по приглашению организатора.</p>
+          <ul class="fact-row" data-i18n-aria-label="a11y.factsLabel" aria-label="Короткие факты о пилоте">
+            <li data-i18n="hero.fact1">Android</li>
+            <li data-i18n="hero.fact2">Интерфейс RU</li>
+            <li data-i18n="hero.fact3">Без сети: на устройстве</li>
+            <li data-i18n="hero.fact4">3 роли</li>
+          </ul>
+        </div>
+
+        <figure class="phone-figure" aria-labelledby="phone-caption">
+          <div class="phone-stage">
+            <span class="phone-tag" data-i18n="phone.tag">Скриншоты</span>
+            <div class="phone-pair">
+              <div class="phone">
+                <img class="phone-shot" src="assets/shot-notes.png" width="1080" height="2400" data-i18n-alt="phone.altNotes" alt="Экран «Замечания»: замечания с фото и статусами">
+              </div>
+              <div class="phone">
+                <img class="phone-shot" src="assets/shot-task.png" width="1080" height="2400" data-i18n-alt="phone.altTask" alt="Экран задачи: исполнитель, срок, стоимость и часы">
+              </div>
+            </div>
+          </div>
+          <figcaption id="phone-caption" data-i18n="phone.caption">Демонстрационные данные, русский интерфейс.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="problem.eyebrow">До приложения</p>
+          <h2 data-i18n="problem.title">Знакомая картина?</h2>
+          <p class="section-lead" data-i18n="problem.lead">Три места, где обычно теряется ремонт.</p>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card">
+            <span class="card-num" aria-hidden="true">01</span>
+            <h3 data-i18n="problem.card1.title">Фото в галерее</h3>
+            <p data-i18n="problem.card1.text">Снимок стены есть, а к какой задаче он относится — уже не помнишь. Через неделю не найдёт никто.</p>
+          </article>
+          <article class="problem-card">
+            <span class="card-num" aria-hidden="true">02</span>
+            <h3 data-i18n="problem.card2.title">Задача в переписке</h3>
+            <p data-i18n="problem.card2.text">Поручение ушло в чат и растворилось между голосовыми и сметами. Кто делает и к какому сроку — непонятно.</p>
+          </article>
+          <article class="problem-card">
+            <span class="card-num" aria-hidden="true">03</span>
+            <h3 data-i18n="problem.card3.title">Замечание на словах</h3>
+            <p data-i18n="problem.card3.text">Заказчик сказал, что плитка у входа сколота. Сказал — и забыл. Потом вспомнил на приёмке.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="inside">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="inside.eyebrow">Что внутри</p>
+          <h2 data-i18n="inside.title">Один объект — одна картина</h2>
+          <p class="section-lead" data-i18n="inside.lead">Бригадир видит объект целиком, рабочий — свои задачи и время, заказчик — замечания и приёмку. Всё связано с объектом.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m7 12 3.2 3.2L17.4 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 data-i18n="inside.card1.title">Задачи</h3>
+            <p data-i18n="inside.card1.text">По комнатам, с исполнителем и сроком. Статус видят все: ждёт, в работе, на проверке, готово.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><rect x="3" y="4" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="8.5" cy="9.5" r="1.7" fill="currentColor"/><path d="m4 17 5.5-5 4 4 3-3L20 17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 data-i18n="inside.card2.title">Фото</h3>
+            <p data-i18n="inside.card2.text">До и после, привязаны к задаче или замечанию. Снимок можно найти через месяц, а не искать в галерее.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-7l-4 3v-3H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 7.5v4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="14.6" r="1.1" fill="currentColor"/></svg>
+            </span>
+            <h3 data-i18n="inside.card3.title">Замечания</h3>
+            <p data-i18n="inside.card3.text">Заказчик фиксирует, бригадир исправляет, заказчик принимает. История не переписывается.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7.5 8h9M7.5 12h9M7.5 16h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <h3 data-i18n="inside.card4.title">Смета и часы</h3>
+            <p data-i18n="inside.card4.text">Каталог работ с нормами, смета из позиций и отдельно фактические часы. Бригадир подтверждает часы или указывает причину спора.</p>
+          </article>
+        </div>
+
+        <div class="chips-block">
+          <p class="chips-label" data-i18n="inside.chipsLabel">Ещё в приложении</p>
+          <ul class="chip-list" data-i18n-aria-label="inside.chipsLabel" aria-label="Ещё в приложении">
+            <li data-i18n="inside.chip1">Роли: бригадир, рабочий, заказчик</li>
+            <li data-i18n="inside.chip2">Без сети: сохранение на устройстве</li>
+            <li data-i18n="inside.chip3">Фото видны только участникам объекта</li>
+            <li data-i18n="inside.chip4">Android</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="scenarios">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="scenarios.eyebrow">Сценарии</p>
+          <h2 data-i18n="scenarios.title">Как это выглядит в работе</h2>
+          <p class="section-lead" data-i18n="scenarios.lead">Три сценария, которые можно проверить на пилоте.</p>
+        </div>
+
+        <div class="scenario-grid">
+          <article class="scenario-card">
+            <span class="scenario-tag" data-i18n="scenarios.card1.tag">Утро</span>
+            <h3 data-i18n="scenarios.card1.title">Утро бригадира</h3>
+            <p data-i18n="scenarios.card1.text">Открываешь «Сегодня»: одна просроченная задача, два замечания ждут ответа. Назначаешь исполнителя — и день идёт без обзвона.</p>
+          </article>
+          <article class="scenario-card">
+            <span class="scenario-tag" data-i18n="scenarios.card2.tag">Приёмка</span>
+            <h3 data-i18n="scenarios.card2.title">Скол на плитке</h3>
+            <p data-i18n="scenarios.card2.text">Заказчик фотографирует и пишет замечание. Бригадир ставит «Исправил» с фото результата. Заказчик видит и одобряет — в приложении, не на словах.</p>
+          </article>
+          <article class="scenario-card">
+            <span class="scenario-tag" data-i18n="scenarios.card3.tag">Смена</span>
+            <h3 data-i18n="scenarios.card3.title">Смена закрыта</h3>
+            <p data-i18n="scenarios.card3.text">Рабочий отмечает фактическое время. Бригадир подтверждает часы или указывает причину спора. План сметы остаётся отдельно.</p>
+          </article>
+        </div>
+        <p class="section-note" data-i18n="scenarios.note">Это примеры сценариев, а не данные конкретного клиента.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="fit">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="fit.eyebrow">Кому подходит</p>
+          <h2 data-i18n="fit.title">Кому подходит пилот</h2>
+          <p class="section-lead" data-i18n="fit.lead">Пилот имеет смысл, если бригада готова попробовать новый порядок в ежедневной работе.</p>
+        </div>
+
+        <div class="fit-grid">
+          <div class="fit-panel fit-yes">
+            <h3 data-i18n="fit.yesTitle">Подойдёт, если</h3>
+            <ul class="fit-list">
+              <li><span class="fit-mark" aria-hidden="true">✓</span><span data-i18n="fit.yes1">Небольшая бригада: бригадир и 2–5 человек, 1–3 объекта — так проще начать</span></li>
+              <li><span class="fit-mark" aria-hidden="true">✓</span><span data-i18n="fit.yes2">Ремонт квартир, офисов или небольших коммерческих помещений</span></li>
+              <li><span class="fit-mark" aria-hidden="true">✓</span><span data-i18n="fit.yes3">Есть Android-телефон и время попробовать новый порядок</span></li>
+              <li><span class="fit-mark" aria-hidden="true">✓</span><span data-i18n="fit.yes4">Заказчик готов фиксировать замечания в приложении</span></li>
+            </ul>
+          </div>
+          <div class="fit-panel fit-no">
+            <h3 data-i18n="fit.noTitle">Пока не подойдёт, если</h3>
+            <ul class="fit-list">
+              <li><span class="fit-mark" aria-hidden="true">×</span><span data-i18n="fit.no1">Нужен iPhone или веб-кабинет прямо сейчас</span></li>
+              <li><span class="fit-mark" aria-hidden="true">×</span><span data-i18n="fit.no2">Нужны бухгалтерия, юридические документы или онлайн-оплата</span></li>
+              <li><span class="fit-mark" aria-hidden="true">×</span><span data-i18n="fit.no3">Нужна интеграция с 1С или вашей системой</span></li>
+              <li><span class="fit-mark" aria-hidden="true">×</span><span data-i18n="fit.no4">Ждёте, что приложение само решит, что делать на объекте</span></li>
+            </ul>
+          </div>
+        </div>
+        <p class="section-note" data-i18n="fit.note">Не уверены? Напишите организатору — обсудим, подходит ли пилот вашей бригаде.</p>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="how.eyebrow">Пилот</p>
+          <h2 data-i18n="how.title">Как попасть в пилот</h2>
+          <p class="section-lead" data-i18n="how.lead">Доступ и APK выдаёт организатор; установка вручную.</p>
+        </div>
+
+        <ol class="step-grid">
+          <li class="step-card">
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3 data-i18n="how.step1.title">Напишите организатору</h3>
+            <p data-i18n="how.step1.text">Коротко: город, сколько объектов и людей в бригаде.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3 data-i18n="how.step2.title">Получите APK</h3>
+            <p data-i18n="how.step2.text">Организатор пришлёт файл и поможет установить.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3 data-i18n="how.step3.title">Пройдите 5-минутное демо</h3>
+            <p data-i18n="how.step3.text">Покажем на вашем объекте или на демо-объекте.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-num" aria-hidden="true">04</span>
+            <h3 data-i18n="how.step4.title">Поработайте на объекте</h3>
+            <p data-i18n="how.step4.text">Одна небольшая бригада, один объект, реальные задачи и фото.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-num" aria-hidden="true">05</span>
+            <h3 data-i18n="how.step5.title">Созвонимся и разберём</h3>
+            <p data-i18n="how.step5.text">Что прижилось, что мешает, что чинить первым.</p>
+          </li>
+        </ol>
+
+        <p class="section-cta"><a class="btn btn-primary" href="#pilot" data-i18n="how.cta">Начать с заявки</a></p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="faq">
+      <div class="container faq-wrap">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="faq.eyebrow">Вопросы</p>
+          <h2 data-i18n="faq.title">Частые вопросы</h2>
+          <p class="section-lead" data-i18n="faq.lead">Восемь вопросов, которые задают до пилота.</p>
+        </div>
+
+        <div class="faq-list">
+          <details open>
+            <summary><span data-i18n="faq.q1">Это приложение для заказчика или для бригады?</span></summary>
+            <p data-i18n="faq.a1">Для всех трёх сторон: бригадир, рабочий, заказчик. У каждого свой доступ и свои действия.</p>
+          </details>
+          <details>
+            <summary><span data-i18n="faq.q2">Работает без интернета?</span></summary>
+            <p data-i18n="faq.a2">Без сети приложение сохраняет правки на телефоне: задачи, фото и замечания можно вести локально. Когда связь вернулась, данные уходят на сервер; если отправка не прошла, приложение показывает «Не всё отправлено на сервер» и кнопку «Повторить». Автоматическую досылку пока не обещаем — это проверяем на пилоте.</p>
+          </details>
+          <details>
+            <summary><span data-i18n="faq.q3">На iPhone будет?</span></summary>
+            <p data-i18n="faq.a3">В пилоте — Android. Про iPhone и веб-версию говорить рано: сначала проверим, что бригады действительно пользуются.</p>
+          </details>
+          <details>
+            <summary><span data-i18n="faq.q4">На каком языке приложение?</span></summary>
+            <p data-i18n="faq.a4">Интерфейс пока на русском. Эта страница есть на русском, белорусском и английском; перевод приложения — после пилота.</p>
+          </details>
+          <details>
+            <summary><span data-i18n="faq.q5">Где скачать?</span></summary>
+            <p data-i18n="faq.a5">В магазинах приложений пока нет. Ссылку на APK выдаёт организатор пилота после короткого разговора.</p>
+          </details>
+          <details>
+            <summary><span data-i18n="faq.q6">Что с данными?</span></summary>
+            <p data-i18n="faq.a6">Фото и задачи видят только участники объекта. Для пилота не загружайте документы, которые нельзя показывать подрядчику. Это пилот, а не юридически значимый сервис.</p>
+          </details>
+          <details>
+            <summary><span data-i18n="faq.q7">Сколько стоит?</span></summary>
+            <p data-i18n="faq.a7">На пилоте условия обсуждаем с организатором. В приложении нет оплаты.</p>
+          </details>
+          <details>
+            <summary><span data-i18n="faq.q8">Сколько длится пилот?</span></summary>
+            <p data-i18n="faq.a8">Ориентир — примерно неделя работы на одном объекте; точный срок и условия обсуждаем с организатором. Это гипотеза пилота, а не обещанный срок.</p>
+          </details>
+        </div>
+
+        <p class="faq-more"><span data-i18n="faq.moreText">Не нашли ответ?</span> <a href="#pilot" data-i18n="faq.moreLink">Напишите организатору</a></p>
+      </div>
+    </section>
+
+    <section class="pilot-section" id="pilot">
+      <div class="container pilot-grid">
+        <div class="pilot-copy">
+          <p class="eyebrow eyebrow-light" data-i18n="cta.eyebrow">Пилот</p>
+          <h2 data-i18n="cta.title">Хотите проверить на своём объекте?</h2>
+          <p class="pilot-lead" data-i18n="cta.lead">Заполните короткую заявку — текст собирается на этом устройстве. Скопируйте его или скачайте файл и передайте организатору.</p>
+
+          <div class="contact-block">
+            <p class="contact-label" data-i18n="cta.contactLabel">Организатор пилота</p>
+            <p class="contact-name" id="organizer-name" hidden></p>
+            <div class="contact-actions" id="contact-actions"></div>
+            <p class="contact-fallback" id="contact-fallback" data-i18n="cta.contactFallback">Контакт организатора пока не подключён. Заявка ниже формируется на этом устройстве — передайте её организатору.</p>
+          </div>
+        </div>
+
+        <div class="apply-card">
+          <h3 data-i18n="form.title">Короткая заявка</h3>
+          <p class="apply-hint" data-i18n="form.hint">Поля не обязательны. Текст ниже обновляется, пока вы печатаете.</p>
+
+          <form id="apply-form" novalidate>
+            <div class="field">
+              <label for="app-name" data-i18n="form.name">Имя</label>
+              <input id="app-name" name="name" type="text" autocomplete="name" data-i18n-placeholder="form.namePlaceholder" placeholder="Как к вам обращаться">
+            </div>
+            <div class="field">
+              <label for="app-city" data-i18n="form.city">Город</label>
+              <input id="app-city" name="city" type="text" autocomplete="address-level2" data-i18n-placeholder="form.cityPlaceholder" placeholder="Например, Минск">
+            </div>
+            <div class="field">
+              <label for="app-crew" data-i18n="form.crew">Бригада: сколько человек</label>
+              <input id="app-crew" name="crew" type="text" inputmode="numeric" data-i18n-placeholder="form.crewPlaceholder" placeholder="Например, 3">
+            </div>
+            <div class="field">
+              <label for="app-object" data-i18n="form.object">Объект: что ремонтируете</label>
+              <input id="app-object" name="object" type="text" data-i18n-placeholder="form.objectPlaceholder" placeholder="Квартира, офис, магазин…">
+            </div>
+            <div class="field">
+              <label for="app-contact" data-i18n="form.contact">Контакт: телефон или Telegram</label>
+              <input id="app-contact" name="contact" type="text" autocomplete="tel" data-i18n-placeholder="form.contactPlaceholder" placeholder="+375… или @username">
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="btn btn-primary" id="copy-request" data-i18n="form.copy">Скопировать заявку</button>
+              <button type="button" class="btn btn-secondary" id="download-request" data-i18n="form.download">Скачать .txt</button>
+            </div>
+            <div class="form-actions form-actions-send" id="send-actions"></div>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="request-preview-wrap">
+            <p class="preview-label" data-i18n="form.previewLabel">Текст заявки</p>
+            <pre id="request-preview" tabindex="0"></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#main" data-i18n-aria-label="brand.aria" aria-label="Бригада — на главную">
+          <img src="assets/mark.svg" alt="" width="32" height="32">
+          <span data-i18n="brand.name">Бригада</span>
+        </a>
+        <p data-i18n="footer.note">Пилот для бригад Беларуси. Приложение пока на русском; эта страница — на русском, белорусском и английском.</p>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-title" data-i18n="footer.links">Разделы</p>
+        <a href="#inside" data-i18n="nav.inside">Что внутри</a>
+        <a href="#scenarios" data-i18n="nav.scenarios">Сценарии</a>
+        <a href="#fit" data-i18n="nav.fit">Кому подходит</a>
+        <a href="#faq" data-i18n="nav.faq">Вопросы</a>
+        <a href="#pilot" data-i18n="nav.cta">Оставить заявку</a>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-title" data-i18n="footer.lang">Язык</p>
+        <div class="lang-switch lang-switch-footer" role="group" data-i18n-aria-label="nav.langLabel" aria-label="Язык">
+          <button type="button" data-lang="ru" lang="ru" aria-label="Русский" aria-pressed="true">RU</button>
+          <button type="button" data-lang="be" lang="be" aria-label="Беларуская" aria-pressed="false">BE</button>
+          <button type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+        </div>
+        <a class="back-top" href="#main" data-i18n="footer.backTop">Наверх</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> <span data-i18n="footer.copyright">Бригада</span></p>
+      <p data-i18n="footer.legal">Не публичный релиз и не оферта.</p>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript">
+      <p>Для переключения языка и работы с заявкой нужен JavaScript. Выше — русская версия страницы.</p>
+      <p lang="en">JavaScript is needed to switch languages and build the request. The page above is in Russian.</p>
+    </div>
+  </noscript>
+
+  <script src="config.js"></script>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
