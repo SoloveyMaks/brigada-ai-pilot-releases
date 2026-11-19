@@ -15,5 +15,5 @@ window.PILOT_CONFIG = {
   organizerName: "",
   email: "",
   telegram: "",
-  apkUrl: "https://github.com/SoloveyMaks/brigada-ai-pilot-releases/releases/download/v0.1.20-b2021/brigada-ai-arm64-v0.1.20-b2021.apk"
+  apkUrl: "https://github.com/SoloveyMaks/brigada-ai-pilot-releases/releases/download/v0.1.21-b2022/brigada-ai-arm64-v0.1.21-b2022.apk"
 };
